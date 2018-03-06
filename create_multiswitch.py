@@ -89,7 +89,7 @@ def createMultiSwitchGraph(sbsname, graphname, foldername):
 	                    
 		# - Bitmap node that uses the previously created resource
 		bitmapNode = usedGraph.createBitmapNode(aSBSDocument = sbsDoc,
-							aGUIPos     = multiSwitchNode.getOffsetPosition([-192 * 4, row*192, 0]),
+							aGUIPos     = multiSwitchNode.getOffsetPosition([-192 * 4, row*128, 0]),
 							aResourcePath = picRes.getPkgResourcePath(),
 							aParameters   = {sbsenum.CompNodeParamEnum.COLOR_MODE:sbsenum.ColorModeEnum.COLOR})
 							
